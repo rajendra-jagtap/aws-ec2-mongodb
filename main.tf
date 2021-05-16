@@ -2,13 +2,13 @@
 # S3 Backend
 #########################################################
 
-#terraform {
-#  backend "s3" {
-#    bucket = "var.bucket"
-#    key    = "var.key"
-#    region = "var.region"
-#   }
-#}
+terraform {
+  backend "s3" {
+    bucket = "var.bucket"
+    key    = "var.key"
+    region = "var.region"
+   }
+}
 
 data "aws_caller_identity" "current" {}
 

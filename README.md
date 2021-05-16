@@ -56,16 +56,16 @@ key(required): Name of the folder/state file. Example: terraform/tfstate
 
 4.  Configure replica set by pasting the following
    
-   `rs.initiate(
-      {
-        _id : 'rs0',
-        members: [
-          { _id : 0, host : "YOUR_LOCAL_IP:27017" },
-          { _id : 1, host : "YOUR_LOCAL_IP:27017" },
-          { _id : 2, host : "YOUR_LOCAL_IP:27017" }
-        ]
-      }
-    )`
+    ```rs.initiate(
+         {
+           _id : 'rs0',
+           members: [
+             { _id : 0, host : "YOUR_LOCAL_IP:27017" },
+             { _id : 1, host : "YOUR_LOCAL_IP:27017" },
+             { _id : 2, host : "YOUR_LOCAL_IP:27017" }
+           ]
+         }
+       )```
 
 5.  Use below command to list the DB's
    
