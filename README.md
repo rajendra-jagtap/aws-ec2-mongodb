@@ -2,7 +2,10 @@
 The script can be used to get create EC2 Cluster along with VPC, Subnet, etc in AWS Cloud
 
 ## Requirements
-Install terraform
+
+Install Terraform
+
+Install Ansible
 
 ## Steps
 
@@ -41,6 +44,8 @@ availability_zones (required): Avaibility zone to create subnet in specific zone
 bucket(required): Name of s3 bucket to store the state
 
 key(required): Name of the folder/state file. Example: terraform/tfstate
+
+mongodb_ips(required): List of MongoDB private IPs to use
 
 ## Setup MongoDB replication on EC2 nodes
 
