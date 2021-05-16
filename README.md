@@ -1,4 +1,4 @@
-# Setup AWS EC2 Cluster through Terraform
+# MongoDB with replicaSet on AWS EC2
 The script can be used to get create EC2 Cluster along with VPC, Subnet, etc in AWS Cloud
 
 ## Requirements
@@ -48,11 +48,11 @@ key(required): Name of the folder/state file. Example: terraform/tfstate
 
 2.  Exec into container
    
-   `docker exec -it mongonode /bin/bash`
+    `docker exec -it mongonode /bin/bash`
 
 3.  Access mongo console using below command
    
-   `mongo`
+    `mongo`
 
 4.  Configure replica set by pasting the following
    
@@ -69,7 +69,7 @@ key(required): Name of the folder/state file. Example: terraform/tfstate
 
 5.  Use below command to list the DB's
    
-   `show dbs`
+    `show dbs`
 
 6.  Create new DB
      
