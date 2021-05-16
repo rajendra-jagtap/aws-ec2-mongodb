@@ -66,9 +66,9 @@ mongodb_ips(required): List of MongoDB private IPs to use
          {
            _id : 'rs0',
            members: [
-             { _id : 0, host : "YOUR_LOCAL_IP:27017" },
-             { _id : 1, host : "YOUR_LOCAL_IP:27017" },
-             { _id : 2, host : "YOUR_LOCAL_IP:27017" }
+             { _id : 0, host : "SERVER1_IP:27017" },
+             { _id : 1, host : "SERVER2_IP:27017" },
+             { _id : 2, host : "SERVER3_IP:27017" }
            ]
          }
        )
