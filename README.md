@@ -44,15 +44,18 @@ key(required): Name of the folder/state file. Example: terraform/tfstate
 
 ## Setup MongoDB replication on EC2 nodes
 
-1. Login into one of the mongo EC2 node.
+1.  Login into one of the mongo EC2 node.
 
-2. Exec into container
+2.  Exec into container
+   
    `docker exec -it mongonode /bin/bash`
 
-3. Access mongo console using below command
+3.  Access mongo console using below command
+   
    `mongo`
 
-4. Configure replica set by pasting the following
+4.  Configure replica set by pasting the following
+   
    `rs.initiate(
       {
         _id : 'rs0',
@@ -64,23 +67,32 @@ key(required): Name of the folder/state file. Example: terraform/tfstate
       }
     )`
 
-5. Use below command to list the DB's
+5.  Use below command to list the DB's
+   
    `show dbs`
 
 6.  Create new DB
-     `use newtestdb`
-     `db.movie.insert({"name":"rajendra"})
-     `show dbs`
+     
+    `use newtestdb`
+    
+    `db.movie.insert({"name":"rajendra"})`
+     
+    `show dbs`
 
 7.  Login into another mongo EC2 node
    
 8.  Exec into container and access mongo console
-     `docker exec -it mongonode /bin/bash`
-     `mongo`
+     
+    `docker exec -it mongonode /bin/bash`
+     
+    `mongo`
 
 9.  Execute below commands on another nodes
-     `rs.status()`
-     `rs.slaveOk()` or try `secondaryOk()`
+     
+    `rs.status()`
+     
+    `rs.slaveOk()` or try `secondaryOk()`
 
 10. List the DB's on another nodes
-     `show dbs`
+     
+    `show dbs`
