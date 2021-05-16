@@ -1,5 +1,5 @@
 # MongoDB with replicaSet on AWS EC2
-The script can be used to get create EC2 Cluster along with VPC, Subnet, etc in AWS Cloud
+The script can be used to create MongoDB replicaSet on EC2 servers along with VPC, Subnet, etc in AWS Cloud
 
 ## Requirements
 
