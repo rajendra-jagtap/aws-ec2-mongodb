@@ -67,7 +67,6 @@ key(required): Name of the folder/state file. Example: terraform/tfstate
            ]
          }
        )
-        ```
 
 5.  Use below command to list the DB's
    
