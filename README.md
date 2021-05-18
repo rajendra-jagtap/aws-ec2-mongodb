@@ -1,5 +1,5 @@
 # MongoDB with replicaSet on AWS EC2
-The script can be used to create MongoDB replicaSet on EC2 servers along with VPC, Subnet, etc in AWS Cloud
+The script can be used to create MongoDB replicaSet on EC2 servers along with VPC, Subnets in AWS Cloud
 
 ## Requirements
 
@@ -20,11 +20,13 @@ Install Ansible
 ## Commands
 A list of commands available:
 
-1. `create` : This will create and configure a new VPC, subnets, etc
-`example: ./deploy.sh create dev`
+1. `create` : This will create and configure MongoDB replicaSet on EC2 servers
 
-2. `update` : This will update the network setup
-`example: ./deploy.sh update dev`
+   `example: ./deploy.sh create dev`
+
+2. `update` : This will update the MongoDB replicaSet changes on EC2 servers
+   
+   `example: ./deploy.sh update dev`
 
 ## Tfvars Arguments:
 Following arguments are available:
